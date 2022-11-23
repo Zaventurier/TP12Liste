@@ -63,5 +63,23 @@ public class Program {
             System.out.println("Le language " + lang2 + " est absent de la liste !");
         }
 
+        //Boucle for
+
+        System.out.println("Saisissez un language :");
+        String lang3 = sc.next();
+        boolean index;
+
+        for(int i = 0; i<liste.size();i++){
+            if(liste.get(i) == lang3){
+                index = true;
+            }
+        }
+        if(index = true){
+            System.out.println("Le language est présent dans la liste !");
+        }else if(index = false){
+            System.out.println("Le language est absent de la liste !");
+        }
+
+
     }
 }
